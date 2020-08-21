@@ -1,26 +1,30 @@
 import React from 'react';
-import {Container} from './styles'
-import { createGlobalStyle } from 'styled-components';
-import ImgLogin from '../../assets/images/backgroundimg.jpg'
-import Logo from "../../assets/images/logo 01 mobile.svg"
+import {Container} from './styles';
+import ImgLogin from '../../assets/images/login-image.svg'
+import Img from "../../assets/images/logo 01 mobile.svg"
+import GlobalStyle from '../../assets/styles/global';
 
 function Login() {
   return (
     <div className="Login">
       <>
-        <createGlobalStyle/>
+        <GlobalStyle/>
         <Container>
-          <img  src={ImgLogin} alt="Homem analizando dados" />
-            <div id="formulario">
+          <img id="imglogin" src={ImgLogin} alt="Ilustração de mulher com cartão" />
+            <div id="loginform">
               <form>
-                <img id="logo" src={Logo} alt="Logo da conta simples"></img>
+                <img id="imglogo" src={Img} alt="Logo da conta simples"></img>
                 <h3>Preencha os campos abaixo para fazer login </h3>
-                <input placeholder="CPF" type='text'/>
-                <input placeholder="Senha" type='password'/>
+                <label htmlFor="cpf" className="labellogin"> CPF: <br/>
+                  <input placeholder="Insira seu CPF" type='text' id="cpf"/>
+                </label>
+                <label htmlFor="senha" className="labellogin"> Senha: <br/>
+                  <input placeholder="Insira sua senha" type='password' id="senha"/>
+                </label>
                 <input value="LOGIN" type= "submit" />
+                <a href="/">Esqueci minha senha {">"}</a> <br/>
+                <a href="/">Ainda não sou cliente {">"}</a>
               </form>
-              <a href="/">Esqueci minha senha {">"}</a> <br/>
-              <a href="/">Ainda não sou cliente {">"}</a>
             </div>
         </Container>
       </>

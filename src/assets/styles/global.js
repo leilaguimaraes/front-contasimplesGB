@@ -9,4 +9,10 @@ export default createGlobalStyle`
 }
 body{
   -webkit-font-smoothing: antialiased;
-}`
+}
+  ::-webkit-scrollbar-thumb{
+    background: #E2E2E2;
+    border-radius: 10px;
+  }
+
+`

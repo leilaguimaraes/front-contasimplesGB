@@ -4,16 +4,18 @@ export const Container = styled.div `
   margin: 0px;
   padding: 0px;
   outline:0px;
+  height:100vh;
+  width:100vw;
   box-sizing: border-box;
   display: flex;
   flex-direction:column;
-  background-color: #fff;
+  background-color: #45B54A;
   align-items: center;
   justify-content: center;
 
   h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     color: #8A8A8A;
   }
@@ -29,15 +31,20 @@ export const Container = styled.div `
     justify-content: center;
 
   }
-  img{
-    margin: 0px;
-    width:100vw;
+  img#imglogin{
+    display:none;
+  }
+  label{
+    color: #8A8A8A;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
   }
 
-  img#logo{
+  img#imglogo{
     width: 134px;
     height: 32px;
-    margin-top: 10px
+    margin-bottom: 10px
   }
 
   form{
@@ -45,20 +52,32 @@ export const Container = styled.div `
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 289px;
+    height: 513px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.25);
   }
 
   input{
-    width: 317px;
+    width: 263px;
     height: 43px;
     border: 1px solid #F0F0F0;
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 30px;
+    padding: 5px
   }
+
+  input:focus {
+	outline: none;
+  border-bottom: 2px solid #45B54A;
+  }
+
   input[type='submit']{
     border: 1.5px solid #45B54A;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #fff;
     color:#45B54A;
     transition: 0.3s;
@@ -67,6 +86,7 @@ export const Container = styled.div `
     border: 1.5px solid #fff;
     color:#fff;
     background-color: #45B54A;
+    cursor: pointer;
   }
 
 
@@ -75,17 +95,14 @@ export const Container = styled.div `
     width: 100%;
     display: flex;
     flex-direction:row;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
 
-    img{
-      height:100vh;
-      min-width: 800px;
-      max-width:800px;
-      max-height: 100vh;
-      margin-right: 50px;
-      margin-left: 0px
+    img#imglogin{
+      display: block ;
+      width: 500px;
+      height: 500px;
+      margin-right: 45px;
     }
     form{
       display:flex;
