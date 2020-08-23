@@ -6,5 +6,10 @@ height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center ;
-flex-wrap: wrap;
+
+
+@media (min-width:600px){
+  display: flex;
+  flex-direction: row;
+}
 `

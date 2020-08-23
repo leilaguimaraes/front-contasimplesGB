@@ -13,7 +13,7 @@ export const Container = styled.div `
   align-items: center;
   justify-content: center;
 
-  h3 {
+  h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
