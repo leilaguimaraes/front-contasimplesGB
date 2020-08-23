@@ -3,52 +3,126 @@ import styled from 'styled-components';
 export const Container  = styled.div `
 width: 100vw;
 height: 100%;
+font-family: Open Sans;
+font-weight: normal;
 
-nav#menu{
+
+
+div#menu{
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-}
 
-.menu-content{
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-  margin-top: 50px
-}
-.dropdown:hover .menu-content {
-  display: block;}
+  button{
+    border: 0px;
+    margin: 10px;
+    background: 0px
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  #navigation{
+    position: absolute;
+    background: #FFFFFF;
+    }
+    ul{
+      width: 300px;
 
-#buttondiv{
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  background:#45B54A;
-}
-img#imglogo{
-    width: 134px;
-    height: 32px;
+    }
+    ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    ul li a{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #333333;
+      text-decoration: none;
+      align-items: center;
+      margin-bottom:5px;
     }
 
-div#logonotificacao{
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-}
-div.dropdown{
-  margin: 10px 20px;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    ul li a img{
+      margin: 3px 10px;
+    }
+  }
 
+  div#menucontent .escondermenu{
+   display: none;
+  }
+
+  }
 }
+
+div#wellcomediv{
+  height: 175px;
+  background: #45B54A;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 94.5px 0px;
+    h2{
+      font-weight: 600;
+      font-size: 25px;
+      color: #FFFFFF;
+    }
+    h3 {
+      font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    }
+    h4{
+      font-weight: normal;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    h5{
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 80px;
+    color: rgba(255, 255, 255, 0.5);
+    }
+    div#logoenome{
+      display: flex;
+      align-items: center;
+    }
+    div#logoenome img{
+      width: 26.5px;
+      height: 26.5px;
+      margin:8px 6px -5px 8px;
+    }
+    .mostrarsaldo{
+      margin: 10px 0px 0px 80px;
+      h2#mask{
+        display: none;
+      }
+      h2#saldo {
+        display: block;
+      }
+       button{
+        border: none;
+        background:none;
+        position: absolute;
+        margin-left: 170px;
+      }
+      button:hover{
+        cursor: pointer;
+      }
+    }
+    .nao-mostrarsaldo{
+      h2#saldo{
+        display: none
+      }
+      h2#mask {
+        display: block
+      }
+    }
+
+.buttondiv{
+      margin-left: 60px
+    }
+}
+
+
 
 `;

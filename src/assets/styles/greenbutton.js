@@ -7,6 +7,7 @@ export const GreenButton = styled.button`
   border: 0.5px solid #FFFFFF;
   border-radius: 4px;
   margin: 5px;
+  transition: ease-in .2s;
 
   a {
     text-decoration: none;
