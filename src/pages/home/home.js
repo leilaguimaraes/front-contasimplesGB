@@ -57,20 +57,20 @@ const Menucontent = props => {
       </button>
       <div className={stylenav} id="navigation">
         <ul>
-          <li><a href="/"><img src={Iconeinicio} alt="inicio"/> Início</a></li>
-          <li><a href="/"><img src={IconeDepositar} alt="inicio"/>Depositar</a></li>
-          <li><a href="/"><img src={Iconeextratodaconta} alt="inicio"/>Extrato da Conta</a></li>
-          <li><a href="/"><img src={IconeCartoes} alt="inicio"/>Cartões</a></li>
-          <li><a href="/"><img src={Iconeemitircobranca} alt="inicio"/>Emitir Cobrança</a></li>
-          <li><a href="/"><img src={IconeGestaodecobranca} alt="inicio"/>Gestão de Cobrança</a></li>
-          <li><a href="/"><img src={Iconetransferencia} alt="inicio"/>Transferência</a></li>
-          <li><a href="/"><img src={Iconepagamentos} alt="inicio"/>Pagamentos</a></li>
-          <li><a href="/"><img src={Iconeusuarios} alt="inicio"/>Usuários</a></li>
-          <li><a href="/"><img src={IconeAgendamentos} alt="inicio"/>Agendamentos</a></li>
-          <li><a href="/"><img src={IconesComprovantes} alt="inicio"/>Comprovantes</a></li>
-          <li><a href="/"><img src={IconeTarifas} alt="inicio"/>Tarifas</a></li>
-          <li><a href="/"><img src={IconeFaleConosco} alt="inicio"/>Fale Conosco</a></li>
-          <li><a href="/"><img src={IconeBeneficios} alt="inicio"/>Beneficios</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconeinicio} alt="inicio"/> Início</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeDepositar} alt="inicio"/>Depositar</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconeextratodaconta} alt="inicio"/>Extrato da Conta</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeCartoes} alt="inicio"/>Cartões</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconeemitircobranca} alt="inicio"/>Emitir Cobrança</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeGestaodecobranca} alt="inicio"/>Gestão de Cobrança</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconetransferencia} alt="inicio"/>Transferência</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconepagamentos} alt="inicio"/>Pagamentos</a></li>
+          <li><a href="/"><img className="iconesul" src={Iconeusuarios} alt="inicio"/>Usuários</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeAgendamentos} alt="inicio"/>Agendamentos</a></li>
+          <li><a href="/"><img className="iconesul" src={IconesComprovantes} alt="inicio"/>Comprovantes</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeTarifas} alt="inicio"/>Tarifas</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeFaleConosco} alt="inicio"/>Fale Conosco</a></li>
+          <li><a href="/"><img className="iconesul" src={IconeBeneficios} alt="inicio"/>Beneficios</a></li>
         </ul>
       </div>
     </div>

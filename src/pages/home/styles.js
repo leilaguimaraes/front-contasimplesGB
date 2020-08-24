@@ -22,15 +22,20 @@ div#menu{
   #navigation{
     position: absolute;
     background: #FFFFFF;
+    width: 220px;
     }
     ul{
       width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
 
     }
     ul li {
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-bottom: 15px;
     }
     ul li a{
       font-family: Open Sans;
@@ -40,12 +45,18 @@ div#menu{
       color: #333333;
       text-decoration: none;
       align-items: center;
-      margin-bottom:5px;
+      text-align: center;
+      line-height: 100% ;
+      margin: auto 0px;
     }
 
     ul li a img{
-      margin: 3px 10px;
+      width: 20px;
+      height: 20px;
+      margin: 0px 15px -5px 5px;
+
     }
+
   }
 
   div#menucontent .escondermenu{
